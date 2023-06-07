@@ -6,16 +6,18 @@ export const metaData = {
   description: "discover and share AI blogs",
 };
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div className="main"></div>
-        <div className="gradient" />
-      <main className="app">
-        <Nav/>
-        {children}
-        </main>
+        <Provider>
+          <div className="main"></div>
+          <div className="gradient" />
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
