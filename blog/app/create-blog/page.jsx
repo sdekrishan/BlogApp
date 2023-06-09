@@ -10,7 +10,7 @@ const CreateBlog = () => {
     const router = useRouter()
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({blog:"",tag:""})
-
+    console.log('session',session);
     const createBlog= async(e) =>{
         e.preventDefault();
         setSubmitting(true)

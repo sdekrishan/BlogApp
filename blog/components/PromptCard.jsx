@@ -7,7 +7,7 @@ import { useState } from "react";
 const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
 
   const [copy, setCopy] = useState("")
-
+  console.log(post);
   const handleCopy = () => {
     setCopy(post.blog)
     navigator.clipboard.writeText(post.blog)
